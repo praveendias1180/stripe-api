@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Accept a payment</title>
+    <meta name="description" content="A demo of a payment on Stripe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="checkout.css" />
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="checkout.js" defer></script>
+  </head>
+  <body>
+    <form id="payment-form">
+      <div id="card-element">
+        <!-- Elements will create input elements here -->
+      </div>
+    
+      <!-- We'll put the error messages in this element -->
+      <div id="card-errors" role="alert"></div>
+    
+      <button id="submit" style="margin-top: 25px">
+        <div class="spinner hidden" id="spinner"></div>
+        <span id="button-text">Pay now</span>
+      </button>
+    </form>
+  </body>
+</html>
