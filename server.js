@@ -74,4 +74,4 @@ app.post('/stripe-webhook-455698', express.json({ type: 'application/json' }), (
   response.send();
 });
 
-app.listen(4242, () => console.log("Stripe API server listening on port 4242!"));
+app.listen(process.env.PORT || 4242, () => console.log("Stripe API server listening on port 4242!"));
